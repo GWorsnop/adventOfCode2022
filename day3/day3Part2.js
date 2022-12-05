@@ -17,6 +17,8 @@ for (let i = 0; i < file.length; i += chunkSize) {
   triples.push(chunk);
 }
 
+// this time I split the array into groups of 3 rather than splitting each one in two
+
 function matcher(arr, i) {
   let count = 0;
   for (let i = 0; i < arr[0].length; i++) {
@@ -27,6 +29,8 @@ function matcher(arr, i) {
     }
   }
 }
+
+// same as last time but with an &&
 
 let total = 0;
 
