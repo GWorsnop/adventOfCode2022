@@ -5,16 +5,15 @@ const file = fs
   .trim()
   .split("\n");
 
-let array = [];
-
 const pairs = file.map((line) => {
   return line.split(",").map((pair) => {
     return pair.split("-").map((number) => {
-      array.push(Number(number));
-      return number;
+      return Number(number);
     });
   });
 });
+
+console.log(pairs);
 
 let matchTotal = 0;
 
